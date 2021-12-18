@@ -1,39 +1,50 @@
+import java.util.Scanner;
+
 public class Main {
 
-    public static void wypisanie() {
-        int liczba = 5;
-        String linia = "witam";
-        double liczba2 = 5.5;
-        byte liczba3 = 127;
-        short liczba4 = 23;
-        long liczba5 = 333;
-        float liczba6 = 312.65f;
-        boolean prawda = true;
-        char litera = 'A';
-        System.out.println(liczba + " " + liczba2 + " " + liczba3 + " " + liczba4 + " " + liczba5 );
-        System.out.println(liczba6 + " " + prawda + " " + litera + linia);
+    public static void dane() {
+       String imie, nazwisko;
+       int wiek,index;
+       Scanner klawiatura = new Scanner(System.in);
+       imie = klawiatura.nextLine();
+       nazwisko = klawiatura.nextLine();
+       wiek = klawiatura.nextInt();
+       index = klawiatura.nextInt();
+
+        System.out.println("Imie: " + imie);
+        System.out.println("Nazwisko: " + nazwisko);
+        System.out.printf("Wiek:%d%n",wiek);
+        System.out.printf("Nr indeksu:%d%n",index);
     }
 
     public static void operacje() {
-        int liczbaA = 50, liczbaB = 66;
-        double liczbaX = 50.45, liczbaY = 424.55;
-        System.out.println("Dodawanie = " + liczbaA + liczbaB + liczbaX + liczbaY);
-        System.out.println("Odejmowanie = " + (liczbaA - liczbaB - liczbaX - liczbaY));
-        System.out.println("Mnozenie = " + (liczbaA * liczbaB * liczbaX * liczbaY));
-        System.out.println("Dzielenie = " + ((liczbaB / liczbaA )+ (liczbaY / liczbaX)));
-        System.out.println("Modulo = " + (liczbaA % liczbaB % liczbaX % liczbaY));
+        int x = 50;
+        int y = 23;
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
+        System.out.println(x / y);
+        System.out.println(x % y);
+
     }
 
 
     public static void main(String[] args) {
-        wypisanie();
+        dane();
         operacje();
     }
 }
 
-/*
- *    zad.2 Napisz kod który będzie wykonywał operacje: dodawania, odejmowania,
- *    mnożenia, dziealenia i modulo na zmiennych:
- *    a) liczbaA i liczbaB, dowolne liczby calkowite (int),
- *    b) liczbaX i liczbaY, dowolne liczby zmiennoprzecinkowe (double)
- *  */
+/* ćw.3 */
+
+/*  zad.1 napisać interfejs który bedzie słuzył do wpisania danych osobowych:
+ *   a) Imię, nazwisko, wiek, nr indeksu,
+ *   dane mają być wprowadzane z klawiatury w konsoli
+ *   b) wyświetlić dane za pomocą println i printf
+ */
+
+
+/*  zad.2 zadeklarować 2 zmienne typu int i wykonać na nich obliczenia arytmetyczn (+, -, *, /, %)
+ *   wynik wyświetlić w konsoli programu
+ */
+
