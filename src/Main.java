@@ -2,20 +2,27 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void tablica() {
-        double[] tab = new double[5];
-        for(int i = 0;i < 5;i++)
-        {
-            tab[i] = i+ 2 + i * 13;
-        }
-        for(int i = 0;i < 5;i++)
-        {
-            System.out.println(tab[i]);
-        }
-    }
 
     public static void main(String[] args) {
-        tablica();
+
+        boolean a = true;
+        boolean b = false;
+        boolean c = false;
+
+        int d = 20;
+        int e = 6;
+        int f = 20;
+
+        System.out.println(a && b);
+        System.out.println(a || c);
+        System.out.println(!c);
+        System.out.println(a && b || b && c);
+        System.out.println(d == e && d < f);
+        System.out.println(d > f || d > e);
+        System.out.println(d == f || d > f);
+        System.out.println(((d > f) || (a && c)));
+
+
     }
 }
 
