@@ -2,20 +2,35 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void tablica() {
-        double[] tab = new double[5];
-        for(int i = 0;i < 5;i++)
-        {
-            tab[i] = i+ 2 + i * 13;
-        }
-        for(int i = 0;i < 5;i++)
-        {
-            System.out.println(tab[i]);
-        }
+    public static void dane() {
+        String imie, nazwisko;
+        int wiek,index;
+        Scanner klawiatura = new Scanner(System.in);
+        imie = klawiatura.nextLine();
+        nazwisko = klawiatura.nextLine();
+        wiek = klawiatura.nextInt();
+        index = klawiatura.nextInt();
+
+        System.out.println("Imie: " + imie);
+        System.out.println("Nazwisko: " + nazwisko);
+        System.out.printf("Wiek:%d%n",wiek);
+        System.out.printf("Nr indeksu:%d%n",index);
+    }
+
+    public static void operacje() {
+        int x = 50;
+        int y = 23;
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
+        System.out.println(x / y);
+        System.out.println(x % y);
+
     }
 
     public static void main(String[] args) {
-        tablica();
+        dane();
+        operacje();
     }
 }
 
