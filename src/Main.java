@@ -2,20 +2,33 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void tablica() {
-        double[] tab = new double[5];
-        for(int i = 0;i < 5;i++)
-        {
-            tab[i] = i+ 2 + i * 13;
-        }
-        for(int i = 0;i < 5;i++)
-        {
-            System.out.println(tab[i]);
-        }
+    public static void wypisanie() {
+        int liczba = 5;
+        String linia = "witam";
+        double liczba2 = 5.5;
+        byte liczba3 = 127;
+        short liczba4 = 23;
+        long liczba5 = 333;
+        float liczba6 = 312.65f;
+        boolean prawda = true;
+        char litera = 'A';
+        System.out.println(liczba + " " + liczba2 + " " + liczba3 + " " + liczba4 + " " + liczba5 );
+        System.out.println(liczba6 + " " + prawda + " " + litera + linia);
+    }
+
+    public static void operacje() {
+        int liczbaA = 50, liczbaB = 66;
+        double liczbaX = 50.45, liczbaY = 424.55;
+        System.out.println("Dodawanie = " + liczbaA + liczbaB + liczbaX + liczbaY);
+        System.out.println("Odejmowanie = " + (liczbaA - liczbaB - liczbaX - liczbaY));
+        System.out.println("Mnozenie = " + (liczbaA * liczbaB * liczbaX * liczbaY));
+        System.out.println("Dzielenie = " + ((liczbaB / liczbaA )+ (liczbaY / liczbaX)));
+        System.out.println("Modulo = " + (liczbaA % liczbaB % liczbaX % liczbaY));
     }
 
     public static void main(String[] args) {
-        tablica();
+        wypisanie();
+        operacje();
     }
 }
 
