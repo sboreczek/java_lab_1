@@ -2,20 +2,19 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void tablica() {
-        double[] tab = new double[5];
-        for(int i = 0;i < 5;i++)
-        {
-            tab[i] = i+ 2 + i * 13;
-        }
-        for(int i = 0;i < 5;i++)
-        {
-            System.out.println(tab[i]);
-        }
-    }
 
     public static void main(String[] args) {
-        tablica();
+        System.out.println("Hello world");
+        System.out.println("My first program");
+        System.out.println("Java programming");
+        System.out.print("Hello world");
+        System.out.print(" Now the whole text is in one line");
+        System.out.print(" I know why");
+        System.out.printf(" Now %s is formatted %d that's why.\n", "the text", 1);
+
+        //        ćw.1 napisać po kilka przykładów wypisywania tekstu w konsoli,
+//        Użyć każdej z opcji
+
     }
 }
 
